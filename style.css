@@ -118,17 +118,6 @@ body {
     text-decoration: none;
     background-color: black;
     border-radius: 15px;
-    padding: 1em;
-    display: block;
-    width: 100%;
-    font-weight: bold;
-}
-
-#navigation a {
-    color: white;
-    text-decoration: none;
-    background-color: black;
-    border-radius: 15px;
     padding: .75em;
     display: block;
     width: 100%;
@@ -179,6 +168,11 @@ section p, ul {
 
 section li {
     margin-left: 1rem;
+}
+
+.subUL{
+    padding: 0;
+    list-style-type: none;
 }
 
 /* Footer */
