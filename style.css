@@ -129,7 +129,7 @@ body {
     text-decoration: none;
     background-color: black;
     border-radius: 15px;
-    padding: 1em;
+    padding: .75em;
     display: block;
     width: 100%;
 }
@@ -145,12 +145,41 @@ body {
 }
 
 #navigation .activeURL {
-    background-color: darkgray;
-    color: black;
+    background-color: lightgray;
+    color: white;
+    border: 2px solid darkgray;
 }
 
 /* Main Content */
+#intro {
+    position: relative;
+    z-index: 1; 
+    border-bottom: 2px solid black;
+}
 
+#intro::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/ethan.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    opacity: 0.5; /* Adjust the opacity value as needed */
+    z-index: -1;
+}
+
+section p, ul {
+    padding: 1rem;
+    line-height: 2rem;
+}
+
+section li {
+    margin-left: 1rem;
+}
 
 /* Footer */
 footer {
@@ -180,4 +209,8 @@ footer {
     font-size: .75em;
     text-align: center;
     margin-top: 1em;
+}
+
+#bottomnav li a {
+    color: inherit
 }
